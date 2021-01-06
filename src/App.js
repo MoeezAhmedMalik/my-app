@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
+import Dinner from './dinner.js';
 
 function App() {
   return (
     <div>
-      Hello World 1223455566
+      <Dinner dishName="Chicken karahi" />
+      <Dinner dishName="Chicken karahi" />
+      <hr/>
+      <Dinner dishName="Chicken karahi" />
+      <Dinner dishName="Chicken karahi" />
+      <hr/>
     </div>
   );
 }
