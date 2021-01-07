@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+.box{
+    height:500px;
+    background-color: aqua;
+}
+.daylight{
+  background-color: aqua;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }

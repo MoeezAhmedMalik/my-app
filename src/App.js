@@ -1,16 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Dinner from './dinner.js';
 
 function App() {
+  let[count,setCount]=useState(0);
+  let[isDay,setDay]=useState(true);
   return (
-    <div>
-      <Dinner dishName="Chicken karahi" />
-      <Dinner dishName="Chicken karahi" />
-      <hr/>
-      <Dinner dishName="Chicken karahi" />
-      <Dinner dishName="Chicken karahi" />
-      <hr/>
+    <div className='box'>
+      <h1>Day Time={isDay ? 'Day' : 'Night'}</h1>
+    <h1>Value of count is {count}</h1>
+    <button onClick={()=>setCount(++count)}>Update counter</button>
     </div>
   );
 }
